@@ -17,7 +17,7 @@ jobs:
 
       - name: Build PDF
         run: |
-          latexmk -pdf -output-directory=out cv.tex
+          latexmk -pdf -output-directory=out CV_CHARF_ENG/cv.tex
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
