@@ -1,4 +1,4 @@
-name: Build and Deploy LaTeX PDF to GitHub Pages
+name: Deploy LaTeX PDF to GitHub Pages
 
 on:
   push:
@@ -12,12 +12,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Install LaTeX
-        run: sudo apt-get install -y texlive-full
-
-      - name: Build PDF
+      - name: Copy PDF to output folder
         run: |
-          latexmk -pdf -output-directory=out CV_CHARF_ENG/cv.tex
+          mkdir -p out
+          cp CV_CHARF_ENG/cv.pdf out/
+          cp CV_CHARF_FR/cv.pdf out/
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
