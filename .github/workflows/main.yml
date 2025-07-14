@@ -15,8 +15,8 @@ jobs:
       - name: Copy PDF to output folder
         run: |
           mkdir -p out
-          cp CV_CHARF_ENG/cv.pdf out/
-          cp CV_CHARF_FR/cv.pdf out/
+          cp CV_CHARF_ENG/cv.pdf out/eng/cv.pdf
+          cp CV_CHARF_FR/cv.pdf out/fr/cv.pdf
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
