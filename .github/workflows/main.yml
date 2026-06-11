@@ -1,22 +1,29 @@
 name: Deploy LaTeX PDF to GitHub Pages
-
 on:
   push:
     branches: [main]
-
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Copy PDF to output folder
+      - name: Compile English CV
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: CV_CHARF_ENG/cv.tex
+
+      - name: Compile French CV
+        uses: xu-cheng/latex-action@v3
+        with:
+          root_file: CV_CHARF_FR/cv.tex
+
+      - name: Move PDFs to output folder
         run: |
           mkdir -p out/eng out/fr
-          cp CV_CHARF_ENG/cv.pdf out/eng/cv.pdf
-          cp CV_CHARF_FR/cv.pdf out/fr/cv.pdf
+          mv CV_CHARF_ENG/cv.pdf out/eng/cv.pdf
+          mv CV_CHARF_FR/cv.pdf out/fr/cv.pdf
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
