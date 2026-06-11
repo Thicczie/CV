@@ -14,12 +14,14 @@ jobs:
         with:
           root_file: cv.tex
           working_directory: CV_CHARF_ENG
+          latexmk_use_xelatex: true
 
       - name: Compile French CV
         uses: xu-cheng/latex-action@v3
         with:
           root_file: cv.tex
           working_directory: CV_CHARF_FR
+          latexmk_use_xelatex: true
 
       - name: Move PDFs to output folder
         run: |
