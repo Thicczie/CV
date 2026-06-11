@@ -8,16 +8,18 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-
+        
       - name: Compile English CV
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: CV_CHARF_ENG/cv.tex
+          root_file: cv.tex
+          working_directory: CV_CHARF_ENG
 
       - name: Compile French CV
         uses: xu-cheng/latex-action@v3
         with:
-          root_file: CV_CHARF_FR/cv.tex
+          root_file: cv.tex
+          working_directory: CV_CHARF_FR
 
       - name: Move PDFs to output folder
         run: |
