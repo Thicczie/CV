@@ -15,128 +15,106 @@
 
 %Create header
 \headerview
-\vspace{1ex} % white space
-%
+\vspace{1ex}
 
-    \section{Education} 
+\section{Education} 
+    \datedexperience{Software Engineering - Computer Engineering (5th year)}{Sep 2020 -- Jul 2025}
+    \explanation{National School of Applied Sciences (ENSA)}{Agadir}
     \datedexperience{Applied Sciences Baccalaureate}{2020}
     \explanation{Elaraki School}{Marrakech} 
-    \datedexperience{5th year software engineer - Computer Engineering}{Sep 2020-july 2025}
-    \explanation{National School of Applied Sciences}{Agadir}
-%
 
 \section{Skills}
-    \newcommand{\skillone}{\createskill{Programming Languages}{Java \cpshalf JavaScript \cpshalf TypeScript \cpshalf C++ \cpshalf C \cpshalf C\# \cpshalf Python \cpshalf PHP}}
-    %
-    \newcommand{\skilltwo}{\createskill{Technologies}{Git \cpshalf Docker \cpshalf Next.js \cpshalf Spring Boot \cpshalf React \cpshalf React Native \cpshalf Oracle DB \cpshalf MySQL \cpshalf PostgreSQL \cpshalf MongoDB \cpshalf Ionic \cpshalf Linux}}
-    %
-    \newcommand{\skillthree}{\createskill{Software Design}{Object-Oriented Design \cpshalf Design Patterns \cpshalf UML \cpshalf MVC Architecture \cpshalf Microservices \cpshalf Agile Methodologies}}
-    %
-    \createskills{\skillone, \skilltwo, \skillthree}
-    \vspace{-3mm} % reduces whitespace!
-% 
-\section{Experience}
-    %
-    \datedexperience{Internship at Sopra Banking Software}{Mar 2025-Aug 2025}
-    \explanation{Software Developper}{Casablanca}
+    \newcommand{\skillone}{\createskill{Languages}{Java \cpshalf JavaScript \cpshalf TypeScript \cpshalf Python \cpshalf C++ \cpshalf C\#}}
+    \newcommand{\skilltwo}{\createskill{Frontend}{React \cpshalf React Native \cpshalf Expo \cpshalf Redux \cpshalf Next.js \cpshalf Tailwind CSS \cpshalf Ionic}}
+    \newcommand{\skillthree}{\createskill{Backend}{Spring Boot \cpshalf Node.js \cpshalf BFF Architecture \cpshalf REST APIs \cpshalf Microservices}}
+    \newcommand{\skillfour}{\createskill{DevOps \& Tools}{Docker \cpshalf Git \cpshalf Linux \cpshalf Keycloak \cpshalf OAuth2 \cpshalf CI/CD}}
+    \newcommand{\skillfive}{\createskill{Databases}{PostgreSQL \cpshalf MySQL \cpshalf MongoDB \cpshalf Oracle DB}}
+    \createskills{\skillone, \skilltwo, \skillthree, \skillfour, \skillfive}
+    \vspace{-3mm}
 
+\section{Experience}
+
+    \datedexperience{Sopra Banking Software (SBS)}{Mar 2025 -- Present}
+    \explanation{Software Engineer}{Casablanca}
+    \explanationdetail{
     
-    \datedexperience{Internship at  Amenal llc}{Feb 2024-Jul 2024}
-    \explanation{Developer for a Multiplatform Application}{Agadir}
+    \smallskip
+    \coloredbullet\ %
+    Joined as an intern and converted to full-time Software Engineer following successful delivery of the initial project phase.
+    
+    \smallskip
+    \coloredbullet\ %
+    Sole frontend developer on a production enterprise mobile banking application for CIH Bank, owning the entire React Native codebase end to end.
+
+    \smallskip
+    \coloredbullet\ %
+    Built and maintained the mobile frontend using React Native, Expo, and Redux, enabling bank branch managers to process and validate overdraft folders in real time.
+
+    \smallskip
+    \coloredbullet\ %
+    Designed and implemented Backend-for-Frontend (BFF) services using Spring Boot, handling request routing, mobile user enrollment, and push notification delivery.
+
+    \smallskip
+    \coloredbullet\ %
+    Integrated Keycloak OAuth2 for secure authentication and authorization across the mobile application.
+
+    \smallskip
+    \coloredbullet\ %
+    Following team lead departure, took ownership of production coordination — directly liaising with the DevOps team to manage deployments and resolve production incidents.
+    }
+
+    \datedexperience{Amenal LLC}{Feb 2024 -- Jul 2024}
+    \explanation{Full-Stack Developer Intern}{Agadir}
     \explanationdetail{
     \smallskip
-     \coloredbullet\ %
-     Developed a customized web and mobile application for managing construction projects, tailored to meet the company's budgeting needs.
-    
+    \coloredbullet\ %
+    Built a cross-platform web and mobile application for construction project management, covering budget tracking, purchase management, invoicing, and payment oversight.
+
     \smallskip 
     \coloredbullet\ %
-     Designed a user-friendly interface that enables project managers to efficiently manage budgets, track purchases, and oversee crucial project aspects (payments, invoices, reception) from both mobile and desktop platforms.
+    Delivered both mobile (React Native) and web (React) interfaces from a single codebase, integrated with a Spring Boot backend and relational database.
     }
-     %
- \bigskip
-%
-\section{Notable Projects}
-  \bigskip
+    \vspace{6mm}
 
+\section{Notable Projects}
 
     \datedexperience{Personal Portfolio Website}{2025}  
-    \explanation{Web Project}{}  
+    \explanation{Next.js, Tailwind CSS, Vercel}{}  
     \explanationdetail{  
     \smallskip  
     \coloredbullet\ %  
-    Developed a modern, responsive portfolio website using Next.js and Tailwind CSS, enabling performance and user experience.  
-    
-    \smallskip  
-    \coloredbullet\ %  
-    Integrated Vercel for seamless deployment, handling CI/CD, and providing a fast, globally distributed hosting solution.  
-    
-    
-    \smallskip  
-    \coloredbullet\ %  
-    Showcased personal projects, skills, and blog posts, enhancing online presence and accessibility.  
+    Designed and deployed a responsive personal portfolio using Next.js and Tailwind CSS, hosted on Vercel with automated CI/CD pipeline.
     }
-    %
+
     \datedexperience{Simplified Compiler for a Custom Language}{2024}
-    \explanation{Low-Level Project}{}
+    \explanation{C++}{}
     \explanationdetail{
     \smallskip 
     \coloredbullet\ %
-     Developed a basic compiler for a custom-designed programming language, focusing on grammar and syntax definition.
-    
-    \smallskip
-     \coloredbullet\ %
-     Implemented a lexer and parser to tokenize input and generate an Abstract Syntax Tree (AST), and performed code generation into a low-level language using C++.
-     
-    \smallskip
-     \coloredbullet\ %
-     Gained insights into how high-level features translate into low-level operations, including memory management and CPU interactions.
+    Implemented a compiler from scratch including lexer, parser, and AST generation for a custom-designed language, with code generation targeting a low-level output using C++.
     }
 
-    \smallskip
-    
-
-    \smallskip
     \datedexperience{Gym Management Application}{2023}
-    \explanation{Java Application Project}{}
+    \explanation{Java / JavaFx}{}
     \explanationdetail{
         \smallskip 
         \coloredbullet\ %
-        Developed a Java-based application for gym management, providing employees with tools to manage clients, offers, and offer categories effectively, with secure login and signup functionalities.
-    
-    
+        Built a Java desktop application for gym client and offer management with authentication, following OOP design patterns.
     }
-
-\smallskip
-\datedexperience{Library Management System}{2023}
-\explanation{Web Application Project}{}
-\explanationdetail{
     \smallskip 
-    \coloredbullet\ %
-    Designed a library management system with a user-friendly interface for administrators to search for books, manage member records, and track book loans. Built using HTML, CSS, JavaScript with jQuery, and a MySQL database for storage.
 
-    \smallskip
-    \coloredbullet\ %
-    Implemented core functionalities such as member and book management, loan tracking, and penalty calculation, with separate layers for user interaction and backend operations using PHP and JavaScript.
-}
-
-\bigskip
 \section{Certifications}
 \indent
 \explanationdetail{
 \smallskip 
    \coloredbullet\ %
-    \textbf{IBM} Application Development using Microservices and Serverless  Professionnal Certificate
+    \textbf{IBM} Application Development using Microservices and Serverless — Professional Certificate
 
    \coloredbullet\ %
-    \textbf{HackerRank} Software Engineering intern 
+    \textbf{HackerRank} Software Engineering Intern
 
    \coloredbullet\ %
-     \textbf{HackerRank} Problem Solving
+    \textbf{HackerRank} Problem Solving
     }
-\end{document}
-
-  
-
-%
 
 \end{document}
