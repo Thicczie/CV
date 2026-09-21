@@ -34,6 +34,7 @@
 \newcommand*{\setthemecolor}[1]{\def\@themecolor{#1}}
 \newcommand*{\setlinkedinaccount}[1]{\def\@linkedinaccount{#1}}
 \newcommand*{\setgithubaccount}[1]{\def\@githubaccount{#1}}
+\newcommand*{\setportfolio}[1]{\def\@portfolio{#1}}
 
 \hypersetup{
     colorlinks=true,
@@ -52,6 +53,7 @@
     
 \newcommand{\githubview}{\href{\@linkedinaccount}{\faLinkedinSquare\ \footnotesize linkedin}}
 \newcommand{\linkedinview}{\href{\@githubaccount}{\faGithubSquare\ \footnotesize github}}
+\newcommand{\portfolioview}{\href{\@portfolio}{\faGlobe\ \footnotesize portfolio}}
 
 \newcommand{\name}{%
     {\LARGE \color{\@themecolor} \@firstname \ \textsc{\@lastname}}
@@ -61,7 +63,7 @@
         % {\small \@address  \cps \@citizenship \\ \@mobile \cps \@mail% %%OLD
         {\small \@mail \ \cpshalf \@mobile %
         \\%
-        \linkedinview \cpshalf \githubview \\ 
+        \linkedinview \cpshalf \githubview \cpshalf \portfolioview \\ 
         } % 
 }
 
