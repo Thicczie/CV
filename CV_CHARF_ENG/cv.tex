@@ -7,114 +7,115 @@
 
 \setlinkedinaccount{https://www.linkedin.com/in/charfomar/} 
 \setgithubaccount{https://github.com/Thicczie} 
+\setportfolio{https://omar-charf.com}
 \setthemecolor{MidnightBlue}
 \usepackage{pbox}
 
-    
 \begin{document}
 
 %Create header
 \headerview
 \vspace{1ex}
 
-\section{Education} 
-    \datedexperience{Software Engineering - Computer Engineering (5th year)}{Sep 2020 -- Jul 2025}
-    \explanation{National School of Applied Sciences (ENSA)}{Agadir}
-    \datedexperience{Applied Sciences Baccalaureate}{2020}
-    \explanation{Elaraki School}{Marrakech} 
-
-\section{Skills}
-    \newcommand{\skillone}{\createskill{Languages}{Java \cpshalf JavaScript \cpshalf TypeScript \cpshalf Python \cpshalf C++ \cpshalf C\#}}
-    \newcommand{\skilltwo}{\createskill{Frontend}{React \cpshalf React Native \cpshalf Expo \cpshalf Redux \cpshalf Next.js \cpshalf Tailwind CSS \cpshalf Ionic}}
-    \newcommand{\skillthree}{\createskill{Backend}{Spring Boot \cpshalf Node.js \cpshalf BFF Architecture \cpshalf REST APIs \cpshalf Microservices}}
-    \newcommand{\skillfour}{\createskill{DevOps \& Tools}{Docker \cpshalf Git \cpshalf Linux \cpshalf Keycloak \cpshalf OAuth2 \cpshalf CI/CD}}
-    \newcommand{\skillfive}{\createskill{Databases}{PostgreSQL \cpshalf MySQL \cpshalf MongoDB \cpshalf Oracle DB}}
-    \createskills{\skillone, \skilltwo, \skillthree, \skillfour, \skillfive}
-    \vspace{-3mm}
-
 \section{Experience}
 
     \datedexperience{Sopra Banking Software (SBS)}{Mar 2025 -- Present}
     \explanation{Software Engineer}{Casablanca}
     \explanationdetail{
-    
-    \smallskip
-    \coloredbullet\ %
-    Joined as an intern and converted to full-time Software Engineer following successful delivery of the initial project phase.
-    
-    \smallskip
-    \coloredbullet\ %
-    Sole frontend developer on a production enterprise mobile banking application for CIH Bank, owning the entire React Native codebase end to end.
 
     \smallskip
     \coloredbullet\ %
-    Built and maintained the mobile frontend using React Native, Expo, and Redux, enabling bank branch managers to process and validate overdraft folders in real time.
+    Joined as an intern, then hired on a permanent contract following the delivery of the project's first phase.
 
     \smallskip
     \coloredbullet\ %
-    Designed and implemented Backend-for-Frontend (BFF) services using Spring Boot, handling request routing, mobile user enrollment, and push notification delivery.
+    Member of the squad responsible for positions and operations management, covering the web and mobile versions of the overdraft decisioning system, now live in production at CIH Bank.
 
     \smallskip
     \coloredbullet\ %
-    Integrated Keycloak OAuth2 for secure authentication and authorization across the mobile application.
+    Built the mobile frontend end to end (React Native, Expo, Redux), used daily by bank branch managers to process overdraft requests.
 
     \smallskip
     \coloredbullet\ %
-    Following team lead departure, took ownership of production coordination — directly liaising with the DevOps team to manage deployments and resolve production incidents.
+    Developed backend business logic for the decisioning engine (Spring Boot): validation rules, case processing, and returning decisions to the client.
+
+    \smallskip
+    \coloredbullet\ %
+    Designed and implemented authentication and authorization (Keycloak, OAuth2), securing access to sensitive financial operations.
+
+    \smallskip
+    \coloredbullet\ %
+    Built Backend-for-Frontend services: request routing, mobile user enrollment, and real-time push notifications.
+
+    \smallskip
+    \coloredbullet\ %
+    Diagnosed and resolved production incidents in direct coordination with the DevOps team: deployments, hotfixes, and release follow-up.
+
+    \smallskip
+    \coloredbullet\ %
+    Worked across the full stack -- from UI to APIs and database -- with full autonomy on the mobile scope.
     }
 
-    \datedexperience{Amenal LLC}{Feb 2024 -- Jul 2024}
-    \explanation{Full-Stack Developer Intern}{Agadir}
+    \noindent\datedexperience{Amenal LLC}{Feb 2024 -- Jul 2024}
+    \explanation{Full-Stack Developer -- Internship}{Agadir}
     \explanationdetail{
     \smallskip
     \coloredbullet\ %
-    Built a cross-platform web and mobile application for construction project management, covering budget tracking, purchase management, invoicing, and payment oversight.
+    Gathered requirements directly from the company owner: replacing a legacy MS Access database with a mobile solution to remotely track assets, budgets, staffing, and safety measures across multiple construction sites.
 
     \smallskip 
     \coloredbullet\ %
-    Delivered both mobile (React Native) and web (React) interfaces from a single codebase, integrated with a Spring Boot backend and relational database.
+    Started the frontend in React Native, then migrated the stack to Ionic mid-project when React Native's ecosystem could not support the complex tabular interfaces required.
+
+    \smallskip 
+    \coloredbullet\ %
+    Delivered the budgeting module end to end in a two-person team, integrated with a Spring Boot backend and a relational database.
     }
     \vspace{6mm}
 
-\section{Notable Projects}
+\section{Projects}
 
-    \datedexperience{Personal Portfolio Website}{2025}  
-    \explanation{Next.js, Tailwind CSS, Vercel}{}  
-    \explanationdetail{  
-    \smallskip  
-    \coloredbullet\ %  
-    Designed and deployed a responsive personal portfolio using Next.js and Tailwind CSS, hosted on Vercel with automated CI/CD pipeline.
-    }
-
-    \datedexperience{Simplified Compiler for a Custom Language}{2024}
-    \explanation{C++}{}
+    \datedexperience{SUPART Lab -- supart-lab.com}{2025}
+    \explanation{React, SCSS, Python}{}
     \explanationdetail{
-    \smallskip 
+    \smallskip
     \coloredbullet\ %
-    Implemented a compiler from scratch including lexer, parser, and AST generation for a custom-designed language, with code generation targeting a low-level output using C++.
-    }
+    Web platform for an art gallery, showcasing its exhibitions and featuring 360° virtual tours of the galleries.
 
-    \datedexperience{Gym Management Application}{2023}
-    \explanation{Java / JavaFx}{}
-    \explanationdetail{
-        \smallskip 
-        \coloredbullet\ %
-        Built a Java desktop application for gym client and offer management with authentication, following OOP design patterns.
-    }
-    \smallskip 
+    \smallskip
+    \coloredbullet\ %
+    Custom admin panel allowing the client to manage galleries and content independently.
+
+    \smallskip
+    \coloredbullet\ %
+    Built in a team of three, covering frontend (React, SCSS) and backend (Python), delivered and live.
+    }\vspace{6mm}
+
+\section{Skills}
+    \newcommand{\skillone}{\createskill{Languages}{Java \cpshalf JavaScript \cpshalf TypeScript \cpshalf Python \cpshalf C++ \cpshalf C\#}}
+    \newcommand{\skilltwo}{\createskill{Frontend}{React \cpshalf React Native \cpshalf Expo \cpshalf Redux \cpshalf Next.js \cpshalf Tailwind CSS \cpshalf SCSS \cpshalf Ionic}}
+    \newcommand{\skillthree}{\createskill{Backend}{Spring Boot \cpshalf Node.js \cpshalf BFF Architecture \cpshalf REST APIs \cpshalf Microservices}}
+    \newcommand{\skillfour}{\createskill{DevOps \& Tools}{Docker \cpshalf Git \cpshalf Linux \cpshalf Nginx \cpshalf Keycloak \cpshalf OAuth2 \cpshalf CI/CD}}
+    \newcommand{\skillfive}{\createskill{Databases}{PostgreSQL \cpshalf MySQL \cpshalf MongoDB \cpshalf Oracle DB}}
+    \newcommand{\skillsix}{\createskill{Languages}{English (fluent) \cpshalf French (fluent) \cpshalf Arabic (native) }}
+    \createskills{\skillone, \skilltwo, \skillthree, \skillfour, \skillfive, \skillsix}
+    \vspace{-3mm}
+
+\section{Education} 
+    \datedexperience{State Engineering Degree -- Computer Engineering}{Sep 2020 -- Jul 2025}
+    \explanation{National School of Applied Sciences (ENSA)}{Agadir}
+    \datedexperience{Applied Sciences Baccalaureate}{2020}
+    \explanation{Elaraki School}{Marrakech} 
 
 \section{Certifications}
 \indent
 \explanationdetail{
 \smallskip 
    \coloredbullet\ %
-    \textbf{IBM} Application Development using Microservices and Serverless — Professional Certificate
-
-   \coloredbullet\ %
-    \textbf{HackerRank} Software Engineering Intern
+    \textbf{IBM} Application Development using Microservices and Serverless -- Professional Certificate
 
    \coloredbullet\ %
     \textbf{HackerRank} Problem Solving
-    }
+}
 
 \end{document}
