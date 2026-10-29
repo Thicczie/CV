@@ -1,19 +1,21 @@
 \documentclass{muratcan_cv}
 
 \setname{CHARF Omar}{}
+\setposition{Ingénieur Mobile \& Backend \cpshalf React Native \cpshalf Spring Boot \cpshalf Fintech}
+\setlocation{Casablanca, Maroc}
 
 \setmobile{+212 631696486}
 \setmail{charfomar.oc@gmail.com}
 
-\setlinkedinaccount{https://www.linkedin.com/in/charfomar/} 
-\setgithubaccount{https://github.com/Thicczie} 
-\setportfolio{https://omar-charf.com}
+\setlinkedinaccount{https://www.linkedin.com/in/charfomar/}{linkedin.com/in/charfomar}
+% TODO : renommer le compte GitHub puis mettre à jour les deux arguments
+\setgithubaccount{https://github.com/Thicczie}{github.com/Thicczie}
+\setportfolio{https://omar-charf.com}{omar-charf.com}
 \setthemecolor{MidnightBlue}
 \usepackage{pbox}
 
 \begin{document}
 
-%Create header
 \headerview
 \vspace{1ex}
 
@@ -37,7 +39,8 @@
 
     \smallskip
     \coloredbullet\ %
-    Sécurisation de l'accès aux opérations financières sensibles par l'authentification et des autorisations basées sur les rôles (Keycloak, OAuth2).
+    % TODO : ajouter COMMENT (une courte proposition), ex. « grâce à ... »
+    Réduction d'environ \textbf{70\,\%} du temps de génération des synthèses clients.
 
     \smallskip
     \coloredbullet\ %
@@ -45,9 +48,14 @@
 
     \smallskip
     \coloredbullet\ %
+    Sécurisation de l'accès aux opérations financières sensibles par l'authentification et des autorisations basées sur les rôles (Keycloak, OAuth2).
+
+    \smallskip
+    \coloredbullet\ %
     Rétablissement du service lors d'incidents en production : diagnostic des causes racines et livraison de correctifs en coordination avec les équipes DevOps.
     }
 
+    % TODO : la date de fin est Juillet 2024 ici mais Jun 2024 dans le CV anglais -- harmoniser
     \noindent\datedexperience{Amenal LLC}{Février 2024 -- Juillet 2024}
     \explanation{Développeur Full-Stack -- Stage de fin d'année}{Agadir, Maroc}
     \explanationdetail{
@@ -57,7 +65,7 @@
 
     \smallskip
     \coloredbullet\ %
-    Sauvetage du projet en identifiant que React Native ne pouvait pas gérer les tableaux complexes requis, puis pilotage de la migration vers Ionic en cours de projet.
+    Analyse des besoins en tableaux de données complexes, puis recommandation et pilotage d'une transition de React Native vers Ionic en cours de projet, mieux adapté à ce besoin.
 
     \smallskip
     \coloredbullet\ %
@@ -84,30 +92,27 @@
     }\vspace{6mm}
 
 \section{Compétences}
-    \newcommand{\skillone}{\createskill{Langages}{Java \cpshalf JavaScript \cpshalf TypeScript \cpshalf Python \cpshalf C++ \cpshalf C\#}}
-    \newcommand{\skilltwo}{\createskill{Frontend}{React \cpshalf React Native \cpshalf Expo \cpshalf Redux \cpshalf Next.js \cpshalf Tailwind CSS \cpshalf SCSS \cpshalf Ionic}}
-    \newcommand{\skillthree}{\createskill{Backend}{Spring Boot \cpshalf Node.js \cpshalf Architecture BFF \cpshalf API REST \cpshalf Microservices}}
-    \newcommand{\skillfour}{\createskill{DevOps \& Outils}{Docker \cpshalf Git \cpshalf Linux \cpshalf Nginx \cpshalf Keycloak \cpshalf OAuth2 \cpshalf CI/CD}}
-    \newcommand{\skillfive}{\createskill{Bases de données}{PostgreSQL \cpshalf MySQL \cpshalf MongoDB \cpshalf Oracle DB}}
-    \newcommand{\skillsix}{\createskill{Langues}{Français (courant) \cpshalf Anglais (courant) \cpshalf Arabe (langue maternelle) }}
+    \newcommand{\skillone}{\createskill{Langages}{Java \cpshalf TypeScript \cpshalf JavaScript \cpshalf Python}}
+    \newcommand{\skilltwo}{\createskill{Mobile \& Frontend}{React Native \cpshalf Expo \cpshalf Redux \cpshalf React \cpshalf Next.js \cpshalf Ionic \cpshalf Tailwind CSS \cpshalf SCSS}}
+    \newcommand{\skillthree}{\createskill{Backend}{Spring Boot \cpshalf Architecture BFF \cpshalf API REST \cpshalf Node.js}}
+    \newcommand{\skillfour}{\createskill{Sécurité \& DevOps}{Keycloak \cpshalf OAuth2 \cpshalf Docker \cpshalf Git \cpshalf Linux \cpshalf Nginx \cpshalf CI/CD}}
+    \newcommand{\skillfive}{\createskill{Bases de données}{PostgreSQL \cpshalf Oracle DB \cpshalf MySQL \cpshalf MongoDB}}
+    \newcommand{\skillsix}{\createskill{Langues}{Français (courant) \cpshalf Anglais (courant) \cpshalf Arabe (langue maternelle)}}
     \createskills{\skillone, \skilltwo, \skillthree, \skillfour, \skillfive, \skillsix}
     \vspace{-3mm}
 
-\section{Éducation} 
+\section{Éducation}
     \datedexperience{Diplôme d'Ingénieur d'État -- Génie Informatique}{Sept 2020 -- Juil 2025}
     \explanation{École Nationale des Sciences Appliquées (ENSA)}{Agadir}
     \datedexperience{Baccalauréat Sciences Appliquées}{2020}
-    \explanation{École Elaraki}{Marrakech} 
+    \explanation{École Elaraki}{Marrakech}
 
 \section{Certifications}
 \indent
 \explanationdetail{
-\smallskip 
+\smallskip
    \coloredbullet\ %
     \textbf{IBM} Application Development using Microservices and Serverless -- Certificat Professionnel
-
-   \coloredbullet\ %
-    \textbf{HackerRank} Problem Solving
 }
 
 \end{document}

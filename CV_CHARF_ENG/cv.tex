@@ -1,25 +1,27 @@
 \documentclass{muratcan_cv}
 
-\setname{CHARF Omar}{}
+\setname{Omar}{Charf}
+\setposition{Mobile \& Backend Engineer \cpshalf React Native \cpshalf Spring Boot \cpshalf Fintech}
+\setlocation{Casablanca, Morocco (open to relocation)}
 
 \setmobile{+212 631696486}
 \setmail{charfomar.oc@gmail.com}
 
-\setlinkedinaccount{https://www.linkedin.com/in/charfomar/} 
-\setgithubaccount{https://github.com/Thicczie} 
-\setportfolio{https://omar-charf.com}
+\setlinkedinaccount{https://www.linkedin.com/in/charfomar/}{linkedin.com/in/charfomar}
+% TODO: rename the GitHub account to something professional, then update both arguments
+\setgithubaccount{https://github.com/Thicczie}{github.com/Thicczie}
+\setportfolio{https://omar-charf.com}{omar-charf.com}
 \setthemecolor{MidnightBlue}
 \usepackage{pbox}
 
 \begin{document}
 
-%Create header
 \headerview
 \vspace{1ex}
 
 \section{Experience}
 
-     \datedexperience{Sopra Banking Software (SBS)}{Mar 2025 -- Present}
+    \datedexperience{Sopra Banking Software (SBS)}{Mar 2025 -- Present}
     \explanation{Software Engineer}{Casablanca, MA}
     \explanationdetail{
 
@@ -37,7 +39,8 @@
 
     \smallskip
     \coloredbullet\ %
-    Secured access to sensitive financial operations with Keycloak and OAuth2 authentication and role-based authorization.
+    % TODO: add HOW you achieved this (one short clause), e.g. "by ..."
+    Reduced client summary generation time by \textbf{$\sim$70\%}.
 
     \smallskip
     \coloredbullet\ %
@@ -45,9 +48,14 @@
 
     \smallskip
     \coloredbullet\ %
+    Secured access to sensitive financial operations with Keycloak and OAuth2 authentication and role-based authorization.
+
+    \smallskip
+    \coloredbullet\ %
     Restored service during production incidents by diagnosing root causes and shipping hotfixes with DevOps.
     }
 
+    % TODO: end date says Jun 2024 here but Juillet 2024 in the French CV -- make them match
     \noindent\datedexperience{Amenal LLC}{Feb 2024 -- Jun 2024}
     \explanation{Full-Stack Developer Intern}{Agadir, MA}
     \explanationdetail{
@@ -57,7 +65,7 @@
 
     \smallskip
     \coloredbullet\ %
-    Saved the project from a dead end by spotting that React Native couldn't support the required complex tables and leading the migration to Ionic mid-project.
+    Assessed the app's data-heavy table requirements and recommended and led a mid-project switch from React Native to Ionic, a better fit for that workload.
 
     \smallskip
     \coloredbullet\ %
@@ -84,30 +92,27 @@
     }\vspace{6mm}
 
 \section{Skills}
-    \newcommand{\skillone}{\createskill{Languages}{Java \cpshalf JavaScript \cpshalf TypeScript \cpshalf Python \cpshalf C++ \cpshalf C\#}}
-    \newcommand{\skilltwo}{\createskill{Frontend}{React \cpshalf React Native \cpshalf Expo \cpshalf Redux \cpshalf Next.js \cpshalf Tailwind CSS \cpshalf SCSS \cpshalf Ionic}}
-    \newcommand{\skillthree}{\createskill{Backend}{Spring Boot \cpshalf Node.js \cpshalf BFF Architecture \cpshalf REST APIs \cpshalf Microservices}}
-    \newcommand{\skillfour}{\createskill{DevOps \& Tools}{Docker \cpshalf Git \cpshalf Linux \cpshalf Nginx \cpshalf Keycloak \cpshalf OAuth2 \cpshalf CI/CD}}
-    \newcommand{\skillfive}{\createskill{Databases}{PostgreSQL \cpshalf MySQL \cpshalf MongoDB \cpshalf Oracle DB}}
-    \newcommand{\skillsix}{\createskill{Languages}{English (fluent) \cpshalf French (fluent) \cpshalf Arabic (native) }}
+    \newcommand{\skillone}{\createskill{Programming}{Java \cpshalf TypeScript \cpshalf JavaScript \cpshalf Python}}
+    \newcommand{\skilltwo}{\createskill{Mobile \& Frontend}{React Native \cpshalf Expo \cpshalf Redux \cpshalf React \cpshalf Next.js \cpshalf Ionic \cpshalf Tailwind CSS \cpshalf SCSS}}
+    \newcommand{\skillthree}{\createskill{Backend}{Spring Boot \cpshalf BFF Architecture \cpshalf REST APIs \cpshalf Node.js}}
+    \newcommand{\skillfour}{\createskill{Security \& DevOps}{Keycloak \cpshalf OAuth2 \cpshalf Docker \cpshalf Git \cpshalf Linux \cpshalf Nginx \cpshalf CI/CD}}
+    \newcommand{\skillfive}{\createskill{Databases}{PostgreSQL \cpshalf Oracle DB \cpshalf MySQL \cpshalf MongoDB}}
+    \newcommand{\skillsix}{\createskill{Spoken}{English (fluent) \cpshalf French (fluent) \cpshalf Arabic (native)}}
     \createskills{\skillone, \skilltwo, \skillthree, \skillfour, \skillfive, \skillsix}
     \vspace{-3mm}
 
-\section{Education} 
+\section{Education}
     \datedexperience{State Engineering Degree -- Computer Engineering}{Sep 2020 -- Jul 2025}
     \explanation{National School of Applied Sciences (ENSA)}{Agadir}
     \datedexperience{Applied Sciences Baccalaureate}{2020}
-    \explanation{Elaraki School}{Marrakech} 
+    \explanation{Elaraki School}{Marrakech}
 
 \section{Certifications}
 \indent
 \explanationdetail{
-\smallskip 
+\smallskip
    \coloredbullet\ %
     \textbf{IBM} Application Development using Microservices and Serverless -- Professional Certificate
-
-   \coloredbullet\ %
-    \textbf{HackerRank} Problem Solving
 }
 
 \end{document}
